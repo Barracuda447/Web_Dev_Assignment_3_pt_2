@@ -1,55 +1,62 @@
-#feedback { font-size: 1.4em; }
 
- #selectable .ui-selecting { background: orange; }
-
- #selectable .ui-selected { background: blue; color: white; }
-
- #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
-
- #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
-
-
-#effectsHeader{
-  margin-top: 100px;
-}
 
 
 body {
-  background-color: lightblue
+    background-color: #041E42; 
+    color: #FF4C00; 
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
-
-
-
-
-
-
-
-#target, #explode, #fade{
-
-  width: 100px; 
-
-  height: 100px; 
-
-  background-color: #000; 
-
-  border: 2px solid #fff; 
-
-  border-radius: 10px}
-
-
-.intro{
-  height: 100px;
+header {
+    background-color: #FF4C00; 
+    color: #041E42; 
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
 }
 
-#color{
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); 
+}
 
-  width: 100px; 
+.column {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #FF4C00; 
+    border-radius: 10px;
+}
 
-  height: 100px; 
+button {
+    padding: 10px 20px;
+    background-color: #FF4C00; 
+    color: #041E42; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
 
-  background-color: grey; 
+button:hover {
+    background-color: #FFA600; 
+}
 
-  border: 2px solid #fff; 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
 
-  border-radius: 10px}
+footer {
+    background-color: #FF4C00; 
+    color: #041E42; 
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
