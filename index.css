@@ -1,1 +1,55 @@
+#feedback { font-size: 1.4em; }
 
+ #selectable .ui-selecting { background: orange; }
+
+ #selectable .ui-selected { background: blue; color: white; }
+
+ #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+
+ #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+
+
+#effectsHeader{
+  margin-top: 100px;
+}
+
+
+body {
+  background-color: lightblue
+}
+
+
+
+
+
+
+
+
+#target, #explode, #fade{
+
+  width: 100px; 
+
+  height: 100px; 
+
+  background-color: #000; 
+
+  border: 2px solid #fff; 
+
+  border-radius: 10px}
+
+
+.intro{
+  height: 100px;
+}
+
+#color{
+
+  width: 100px; 
+
+  height: 100px; 
+
+  background-color: grey; 
+
+  border: 2px solid #fff; 
+
+  border-radius: 10px}
