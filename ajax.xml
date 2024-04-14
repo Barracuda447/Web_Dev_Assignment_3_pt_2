@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <person>
+    <name>Connor McDavid</name>
+    <age>25</age>
+    <number>97</number>
+  </person>
+  <person>
+    <name>Leon Draisaitl</name>
+    <age>24</age>
+    <number>29</number>
+  </person>
+</data>
