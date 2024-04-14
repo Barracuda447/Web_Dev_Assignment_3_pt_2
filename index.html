@@ -1,1 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <style>
+        #draggable1 {
+            width: 100px;
+            height: 100px;
+            padding: 0.5em;
+            float: left;
+            margin: 10px 10px 10px 0;
+        }
+
+        #draggable2 {
+            width: 100px;
+            height: 100px;
+            padding: 0.5em;
+            float: left;
+            margin: 10px 10px 10px 0;
+        }
+
+        #draggable3 {
+            width: 100px;
+            height: 100px;
+            padding: 0.5em;
+            float: left;
+            margin: 10px 10px 10px 0;
+        }
+
+        #droppable {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em;
+            float: left;
+            margin: 10px;
+        }
+
+        #resizable {
+            width: 500px;
+            height: 150px;
+            padding: 0.5em;
+            float: left;
+            margin: 10px;
+        }
+
+        .input-container {
+            margin-bottom: 10px;
+        }
+
+        .input-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("#draggable1").draggable({
+                revert: "invalid"
+            });
+            $("#draggable2").draggable()
+
+            $("#draggable3").draggable({
+                revert: "valid"
+            });
+
+            $("#droppable").droppable({
+                drop: function (event, ui) {
+                    $(this).addClass("ui-state-highlight").find("p").html("item dropped")
+                }
+            })
+
+            $("#resizable").resizable()
+
+            $("#selectable").selectable();
+
+            $("#accordion").accordion();
+        });
+    </script>
+</head>
+
+<body>
+  <center>
+<header>
+        <h1>JQuery UI Implementations</h1>
+        
+    </header>
+  </center>
+    <div id="accordion">
+
+        <h3>Draggable and Droppable</h3>
+        <div>
+            <div class="container">
+                <div class="title">
+                    <center>
+                        <h2 id="Title">Draggable and Droppable</h2>
+                    </center>
+                </div>
+                <div id="draggable1" class="ui-widget-content">
+                    <p>Draggable With Invalid Revert</p>
+                </div>
+                <div id="draggable2" class="ui-widget-content">
+                    <p>Draggable With No Revert Statement</p>
+                </div>
+                <div id="draggable3" class="ui-widget-content">
+                    <p>Draggable With Valid Revert</p>
+                </div>
+                <div id="droppable" class="ui-widget-header">
+                    <p>Droppable (Dropbox)</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>Resizable</h3>
+        <div>
+            <center>
+                <h2>Resizable</h2>
+                <div id="resizable" class="ui-widget-content">
+                    <p>Resizable Box</p>
+                </div>
+            </center>
+        </div>
+
+        <h3>Selectable</h3>
+        <div>
+            <center>
+                <h2>Selectable</h2>
+                <div>
+                    <ul id="selectable">
+                        <li class="ui-widget-content">Item 1</li>
+                        <li class="ui-widget-content">Item 2</li>
+                        <li class="ui-widget-content">Item 3</li>
+                        <li class="ui-widget-content">Item 4</li>
+                        <li class="ui-widget-content">Item 5</li>
+                    </ul>
+                </div>
+            </center>
+        </div>
+
+        <h3>Widgets</h3>
+        <div>
+            <h2>Autofill & Datepicker</h2>
+            <div class="form">
+        <div class="input-container">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" autocomplete="given-name">
+        </div>
+        <div class="input-container">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" autocomplete="family-name">
+        </div>
+        <div class="input-container">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email">
+        </div>
+        <div class="input-container">
+            <label for="datepicker">Date</label>
+            <input type="text" id="datepicker" name="datepicker" placeholder="Select date">
+        </div>
+    </div>
+        </div>
+
+        <h3>Show and Hide</h3>
+        <div>
+            <center>
+                <h1 id="effectsHeader">jQuery UI Effects</h1>
+                <h2>Show / Hide</h2>
+                <div id="target">
+                </div>
+                <button id="b1">1</button>
+                <button id="b2">2</button>
+            </center>
+        </div>
+
+        <h3>Explode</h3>
+        <div>
+            <center>
+                <h2>Explode</h2>
+                <div id="explode">
+                </div>
+                <button id="exp1">1</button>
+            </center>
+        </div>
+
+        <h3>Fade in and Fade out</h3>
+        <div>
+            <center>
+                <h2>Fade in / fade out</h2>
+                <div id="fade">
+                </div>
+                <button id="fade1">1</button>
+                <button id="fade2">2</button>
+            </center>
+        </div>
+
+        <h3>Color</h3>
+        <div>
+            <center>
+                <h2>Color Change</h2>
+                <div id="color">Click Me!
+                </div>
+            </center>
+        </div>
+
+    </div>
+<footer>
+        <p>&copy; 2024 JQuery UI Implementations, Developed by Colby Pye.</p>
+        
+    </footer>
+</body>
+
+</html>
 
