@@ -1,15 +1,14 @@
 {
-    "people": [
-      {
-        "name": "Ryan Nugent-Hopkins",
-        "age": 28,
-        "number": 93
-      },
-      {
-        "name": "Mattias Ekholm",
-        "age": 31,
-        "number": 14
-      }
-    ]
-  }
-  
+  "people": [
+    {
+      "name": "Ryan Nugent-Hopkins",
+      "age": 31,
+      "number": 93
+    },
+    {
+      "name": "Mattias Ekholm",
+      "age": 34,
+      "number": 14
+    }
+  ]
+}
